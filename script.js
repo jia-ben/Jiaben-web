@@ -34,14 +34,27 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.dropdown-content').classList.toggle('show');
     });
 
-    // 点击页面其他地方时，隐藏下拉菜单
+    // 点击主题按钮，显示或隐藏二级菜单
+    document.querySelector('.submenu-btn').addEventListener('click', function(event) {
+        event.stopPropagation();
+        this.nextElementSibling.classList.toggle('show');
+    });
+
+    // 点击页面其他地方时，隐藏下拉菜单和二级菜单
     window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
+        if (!event.target.matches('.dropbtn') && !event.target.matches('.submenu-btn')) {
             var dropdowns = document.getElementsByClassName('dropdown-content');
             for (var i = 0; i < dropdowns.length; i++) {
                 var openDropdown = dropdowns[i];
                 if (openDropdown.classList.contains('show')) {
                     openDropdown.classList.remove('show');
+                }
+            }
+            var submenus = document.getElementsByClassName('submenu-content');
+            for (var i = 0; i < submenus.length; i++) {
+                var openSubmenu = submenus[i];
+                if (openSubmenu.classList.contains('show')) {
+                    openSubmenu.classList.remove('show');
                 }
             }
         }
