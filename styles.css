@@ -1,0 +1,183 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffe6f2; /* 默认粉色背景 */
+}
+
+/* 头部样式 */
+header {
+    background-color: #ff99cc; /* 默认深粉色 */
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* logo 样式 */
+.logo {
+    font-size: 24px;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #ff66b2; /* 默认中粉色 */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 下拉菜单样式 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* 二级菜单样式 */
+.dropdown-submenu {
+    position: relative;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-submenu:hover .submenu-content {
+    display: block;
+}
+
+/* 显示下拉菜单 */
+.show {
+    display: block;
+}
+
+/* 容器样式 */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 200px;
+    background-color: #ffccdd; /* 默认浅粉色 */
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 内容区域样式 */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #ff99cc; /* 默认深粉色 */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 蓝色主题 */
+body.blue-theme {
+    background-color: #e6f2ff;
+}
+
+header.blue-theme, footer.blue-theme {
+    background-color: #99ccff;
+}
+
+nav.blue-theme {
+    background-color: #66b2ff;
+}
+
+.sidebar.blue-theme {
+    background-color: #cce0ff;
+}
+
+/* 黑色主题 */
+body.black-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+header.black-theme, footer.black-theme {
+    background-color: #000;
+}
+
+nav.black-theme {
+    background-color: #444;
+}
+
+.sidebar.black-theme {
+    background-color: #555;
+}
+
+.sidebar.black-theme ul li a {
+    color: #fff;
+}

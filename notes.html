@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笔记</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo">LOGO</div>
+    </header>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="notes.html">笔记</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">设置</a>
+                <div class="dropdown-content">
+                    <div class="dropdown-submenu">
+                        <a href="javascript:void(0)" class="submenu-btn">主题</a>
+                        <div class="submenu-content">
+                            <a href="#" onclick="setTheme('pink')">粉色</a>
+                            <a href="#" onclick="setTheme('blue')">蓝色</a>
+                            <a href="#" onclick="setTheme('black')">黑色</a>
+                        </div>
+                    </div>
+                    <!-- 你可以在这里添加更多设置选项 -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- 主体内容 -->
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#section1">目录1</a></li>
+                <li><a href="#section2">目录2</a></li>
+            </ul>
+        </aside>
+        <!-- 内容区域 -->
+        <main class="content">
+            <h1>笔记</h1>
+            <p>这里是笔记页面的内容。</p>
+            <!-- 主题内容由你稍后进行补充 -->
+        </main>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <p>联系方式：example@example.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
