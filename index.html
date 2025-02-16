@@ -3,8 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Liujiaben-test</title>
+    <title>Liujiaben's website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #menu {
+            background: whitesmoke;
+            width: 100px;
+            float: left;
+            padding: 10px;
+        }
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        #header {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        #footer {
+            background-color: whitesmoke;
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <p>刘佳奔的网页 test</p>
+    <div id="menu">
+        <p>目录</p>
+        <p>.1.</p>
+        <p>.2.</p>
+    </div>
+    <div id="container">
+        <div id="header">
+            <h1 style="margin-bottom:0;">网页标题</h1>
+        </div>
+        <div id = "content">
+            <h2>欢迎访问我的网站</h2>
+            <p>这是一个段落。</p>
+            <p>这是另一个段落。</p>
+        </div>
+        <div id = "test1">
+            <h2>test1</h2>
+            <button onclick="alert('Welcome')">点击我</button>
+        </div>
+    </div>
+    <div id="footer">
+        @test
+    </div>
 </body>
+
+</html>
