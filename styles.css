@@ -111,8 +111,12 @@ nav ul li a {
 /* 侧边栏样式 */
 .sidebar {
     width: 200px;
-    background-color: #ffccdd; /* 默认浅粉色 */
+    background-color: #f4f4f4;
     padding: 10px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .sidebar ul {
@@ -127,6 +131,51 @@ nav ul li a {
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
+}
+
+#file-list {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#file-list li {
+    margin: 5px 0;
+}
+
+#file-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+#file-list a:hover {
+    text-decoration: underline;
+}
+
+.toc {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.toc div {
+    margin: 5px 0;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.toc a:hover {
+    text-decoration: underline;
 }
 
 /* 内容区域样式 */
@@ -160,6 +209,15 @@ nav.blue-theme {
     background-color: #cce0ff;
 }
 
+#file-list.blue-theme, .toc.blue-theme {
+    background-color: #e6f2ff;
+    border-color: #99ccff;
+}
+
+#file-list.blue-theme a, .toc.blue-theme a {
+    color: #0056b3;
+}
+
 /* 黑色主题 */
 body.black-theme {
     background-color: #333;
@@ -179,5 +237,14 @@ nav.black-theme {
 }
 
 .sidebar.black-theme ul li a {
+    color: #fff;
+}
+
+#file-list.black-theme, .toc.black-theme {
+    background-color: #333;
+    border-color: #444;
+}
+
+#file-list.black-theme a, .toc.black-theme a {
     color: #fff;
 }
