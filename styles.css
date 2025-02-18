@@ -248,3 +248,29 @@ nav.black-theme {
 #file-list.black-theme a, .toc.black-theme a {
     color: #fff;
 }
+
+/* 橙色主题 */
+body.orange-theme {
+    background-color: #fff3e6;
+}
+
+header.orange-theme, footer.orange-theme {
+    background-color: #ffcc99;
+}
+
+nav.orange-theme {
+    background-color: #ff9966;
+}
+
+.sidebar.orange-theme {
+    background-color: #ffe0cc;
+}
+
+#file-list.orange-theme, .toc.orange-theme {
+    background-color: #fff3e6;
+    border-color: #ffcc99;
+}
+
+#file-list.orange-theme a, .toc.orange-theme a {
+    color: #cc6600;
+}

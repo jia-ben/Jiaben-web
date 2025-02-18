@@ -12,6 +12,9 @@ function setTheme(theme) {
     document.querySelector('.sidebar').className = 'sidebar ' + theme + '-theme';
     // 设置 footer 的 className
     document.querySelector('footer').className = theme + '-theme';
+    // 设置 file-list 和 toc 的 className
+    document.getElementById('file-list').className = theme + '-theme';
+    document.getElementById('markdown-toc').className = 'toc ' + theme + '-theme';
     // 将主题保存到 localStorage 中
     localStorage.setItem('theme', theme);
 }
